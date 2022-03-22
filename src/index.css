@@ -5,9 +5,114 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2d3436;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.full-page {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem 20%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.option-box {
+    border-radius: 1rem;
+    border: 1px solid #415157;
+    margin: 0 auto;
+}
+
+.fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 10%;
+}
+
+.field {
+    height: 40px;
+    border: 1px solid #415157;
+    border-radius: 3px;
+    width: 300px;
+    margin-top: 5px;
+    font-weight: 800;
+    /* letter-spacing: 3px; */
+    background-color: #636e72;
+    font-size: 30px;
+    color: white;
+    padding: 0 10px;
+}
+
+.position-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 30%;
+}
+
+.position-fields input[type=text] {
+    width: 50px;
+    height: 50px;
+    background-color: #636e72;
+    border: 1px solid #415157;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #00b894;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    font-weight: 800;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #029275;
+}
+
+label {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.words-box {
+    border-radius: 1rem;
+    border: 1px solid #415157;
+    margin: 2rem auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    padding: 5px 12px;
+    background-color: #00b894;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+
+p:hover {
+    transform: scale(1.05);
 }
