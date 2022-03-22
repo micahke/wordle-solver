@@ -44,7 +44,7 @@ function App() {
                             <input value={bad.toUpperCase()} onChange={(event) => setBad(event.target.value.toLowerCase())} className="field" type="text" />
                         </div>
                     </div>
-                    <label className='green-letters'>Green Letters:</label>
+                    <label className='green-letters'>Green letters:</label>
                     <div className='position-fields'>
                         <input type="text" value={one.toUpperCase()} onChange={(event) => setOne(event.target.value.toLowerCase())} maxlength="1" />
                         <input type="text" value={two.toUpperCase()} onChange={(event) => setTwo(event.target.value.toLowerCase())} maxlength="1" />
