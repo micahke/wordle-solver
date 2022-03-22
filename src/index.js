@@ -29,7 +29,7 @@ function App() {
 
     return (
         <div className='full-page'>
-            <h1> Solver</h1>
+            <h1>Wordle Solver</h1>
             <div className='full-width'>
                 <div className='option-box'>
                     <div className='fields'>
@@ -44,6 +44,7 @@ function App() {
                             <input value={bad.toUpperCase()} onChange={(event) => setBad(event.target.value.toLowerCase())} className="field" type="text" />
                         </div>
                     </div>
+                    <label className='green-letters'>Green Letters:</label>
                     <div className='position-fields'>
                         <input type="text" value={one.toUpperCase()} onChange={(event) => setOne(event.target.value.toLowerCase())} maxlength="1" />
                         <input type="text" value={two.toUpperCase()} onChange={(event) => setTwo(event.target.value.toLowerCase())} maxlength="1" />
@@ -61,6 +62,7 @@ function App() {
                     </div>
                     :
                     <></>}
+                <footer>© 2022 Micah Elias</footer>
             </div >
         </div >
     );
