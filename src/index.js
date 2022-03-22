@@ -44,13 +44,17 @@ function App() {
                             <input value={bad.toUpperCase()} onChange={(event) => setBad(event.target.value.toLowerCase())} className="field" type="text" />
                         </div>
                     </div>
-                    <label className='green-letters'>Green letters:</label>
-                    <div className='position-fields'>
-                        <input type="text" value={one.toUpperCase()} onChange={(event) => setOne(event.target.value.toLowerCase())} maxlength="1" />
-                        <input type="text" value={two.toUpperCase()} onChange={(event) => setTwo(event.target.value.toLowerCase())} maxlength="1" />
-                        <input type="text" value={three.toUpperCase()} onChange={(event) => setThree(event.target.value.toLowerCase())} maxlength="1" />
-                        <input type="text" value={four.toUpperCase()} onChange={(event) => setFour(event.target.value.toLowerCase())} maxlength="1" />
-                        <input type="text" value={five.toUpperCase()} onChange={(event) => setFive(event.target.value.toLowerCase())} maxlength="1" />
+                    <div className='five-boxes'>
+                        <div>
+                            <label className='green-letters'>Green letters:</label>
+                            <div className='position-fields'>
+                                <input type="text" value={one.toUpperCase()} onChange={(event) => setOne(event.target.value.toLowerCase())} maxlength="1" />
+                                <input type="text" value={two.toUpperCase()} onChange={(event) => setTwo(event.target.value.toLowerCase())} maxlength="1" />
+                                <input type="text" value={three.toUpperCase()} onChange={(event) => setThree(event.target.value.toLowerCase())} maxlength="1" />
+                                <input type="text" value={four.toUpperCase()} onChange={(event) => setFour(event.target.value.toLowerCase())} maxlength="1" />
+                                <input type="text" value={five.toUpperCase()} onChange={(event) => setFive(event.target.value.toLowerCase())} maxlength="1" />
+                            </div>
+                        </div>
                     </div>
                     <div className='submit-button'><button onClick={checkInput} >Find Words</button></div>
                 </div>

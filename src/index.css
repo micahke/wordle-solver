@@ -47,15 +47,17 @@ body {
 }
 
 .position-fields {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: space-between;
-    margin: 5px 30%;
+    margin: 5px 10px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
 }
 
 .position-fields input[type=text] {
-    width: 50px;
     height: 50px;
+    width: 50px;
     background-color: #636e72;
     border: 1px solid #415157;
     border-radius: 3px;
@@ -125,14 +127,13 @@ footer {
 }
 
 .green-letters {
-    margin: 30%;
+    margin: 10px;
 }
 
-@media only screen and (max-width: 800px) {
-    .position-fields input[type=text] {
-        width: 35px;
-        height: 35px;
-    }
+.five-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 900px) {
@@ -143,36 +144,18 @@ footer {
         flex-direction: column;
         margin-left: 15%;
     }
-
-    .position-fields {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 5px 10%;
-    }
-
-    .green-letters {
-        margin: 20%;
-    }
     .words-box {
 
         grid-template-columns: repeat(4, 1fr);
     }
-  }
-
-  @media only screen and (max-width: 1200px) {
-    .position-fields {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 5px 20%;
+    .five-boxes {
+        margin-left: 10%;
     }
-    .green-letters {
-        margin: 20%;
-    }
-    .words-box {
-
-        grid-template-columns: repeat(4, 1fr);
+    .five-boxes input[type=text] {
+        width: 40px;
+        height: 40px;
     }
   }
+
+
 
