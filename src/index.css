@@ -142,7 +142,7 @@ footer {
     justify-content: center;
 }
 
-@media only screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
     .five-boxes input[type=text] {
         width: 25px;
         height: 25px;
@@ -153,7 +153,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .full-page {
         padding: 1rem 5%;
     }
