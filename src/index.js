@@ -66,7 +66,7 @@ function App() {
                     </div>
                     :
                     <></>}
-                <footer>© 2022 Micah Elias</footer>
+                <footer><div id="ft" >© 2022 Micah Elias<br />v1.03</div></footer>
             </div >
         </div >
     );

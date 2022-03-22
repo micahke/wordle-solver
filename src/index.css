@@ -125,6 +125,12 @@ footer {
     margin-top: 10px;
     font-size: 10px;
 }
+#ft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
 .green-letters {
     margin: 10px;
