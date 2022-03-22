@@ -136,6 +136,17 @@ footer {
     justify-content: center;
 }
 
+@media only screen and (max-width: 650px) {
+    .five-boxes input[type=text] {
+        width: 30px;
+        height: 30px;
+    }
+
+    .words-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .full-page {
         padding: 1rem 5%;
